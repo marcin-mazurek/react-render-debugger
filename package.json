@@ -25,5 +25,8 @@
     "react",
     "render",
     "visualizer"
-  ]
+  ],
+  "dependencies": {
+    "react": "^0.13.3"
+  }
 }
