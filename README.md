@@ -1,6 +1,8 @@
-React Render Visualizer
+React Render Visualizer Decorator
 ============
-A visual way to see what is (re)rendering and why.  
+A visual way to see what is (re)rendering and why.
+
+ES7 decorator version ported from <https://github.com/redsunsoft/react-render-visualizer>
 
 Features
 --------
@@ -12,21 +14,25 @@ Installation
 ------------
 
 ```sh
-npm install react-render-visualizer
+npm install react-render-visualizer-decorator
 ```
 
 Usage
 -----
-This is a mixin so once you've included the source code, simply mix it in to any react component you want to start monitoring.
+Import and apply to any React component you want to start monitoring:
 
-E.g.
 ```js
-var ReactRenderVisualizer = require("react-render-visualizer");
+import React, { Component } from 'react';
+import visualiseRender from 'react-render-visualiser-decorator';
 
-app.TodoItem = React.createClass({
-    mixins: [ReactRenderVisualizer],
+@visualiseRender
+class TodoItem extends Component {
+    render () {
+        // ...
+    }
+}
 ```
-Component will show up with a blue border box when being monitored
+Component will show up with a blue border box when being monitored.
 
 
 Demo
