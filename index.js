@@ -40,6 +40,11 @@ function visualiseRender (component) {
     };
 
     component.prototype.componentDidMount = function(){
+        // Create empty state object if not defined
+        if (!this.state) {
+            this.state = {};
+        }
+
         // Reset the logs
         this._resetRenderLog();
 
