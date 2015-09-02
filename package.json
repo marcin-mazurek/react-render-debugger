@@ -1,30 +1,34 @@
 {
-  "name": "react-render-visualizer",
-  "version": "0.2.1",
-  "description": "Render visualizer for ReactJS",
+  "name": "react-render-visualizer-decorator",
+  "version": "0.1.0",
+  "description": "Render visualizer decorator for ReactJS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/redsunsoft/react-render-visualizer.git"
+    "url": "https://github.com/marcin-mazurek/react-render-visualizer-decorator.git"
   },
-  "author": "Tony Casparro <tony@redsunsoft.com> (http://redsunsoft.com)",
+  "author": "Marcin Mazurek <marcin@mazurek.pro>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/redsunsoft/react-render-visualizer/issues"
+    "url": "https://github.com/marcin-mazurek/react-render-visualizer-decorator/issues"
   },
-  "homepage": "https://github.com/redsunsoft/react-render-visualizer",
+  "homepage": "https://github.com/marcin-mazurek/react-render-visualizer-decorator",
   "tags": [
     "react",
     "render",
-    "visualizer"
+    "visualizer",
+    "decorator",
+    "es7"
   ],
   "keywords": [
     "react",
     "render",
-    "visualizer"
+    "visualizer",
+    "decorator",
+    "es7"
   ],
   "dependencies": {
     "react": "^0.13.3"
