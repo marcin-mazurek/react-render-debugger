@@ -2,7 +2,7 @@
 
 var React = require('react');
 
-function visualiseRender (component) {
+function visualizeRender (component) {
     component.prototype.UPDATE_RENDER_LOG_POSITION_TIMEOUT_MS = 500;
     component.prototype.MAX_LOG_LENGTH = 20;
     component.prototype.STATE_CHANGES = {
@@ -301,4 +301,4 @@ function visualiseRender (component) {
     component._updateRenderLogPositionTimeout = null;
 }
 
-module.exports = visualiseRender;
+module.exports = visualizeRender;
