@@ -23,9 +23,9 @@ Import and apply to any React component you want to start monitoring:
 
 ```js
 import React, { Component } from 'react';
-import visualiseRender from 'react-render-visualiser-decorator';
+import visualizeRender from 'react-render-visualizer-decorator';
 
-@visualiseRender
+@visualizeRender
 class TodoItem extends Component {
     render () {
         // ...
