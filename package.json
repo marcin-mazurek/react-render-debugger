@@ -30,7 +30,7 @@
     "decorator",
     "es7"
   ],
-  "dependencies": {
-    "react": "^0.13.3"
+  "peerDependencies": {
+    "react": ">=0.13.3"
   }
 }
