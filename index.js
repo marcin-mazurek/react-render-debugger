@@ -1,6 +1,7 @@
 'use strict';
 
 var React = require('react');
+var ReactDOM = require('react-dom');
 
 function visualizeRender (component) {
     component.prototype.UPDATE_RENDER_LOG_POSITION_TIMEOUT_MS = 500;
@@ -168,7 +169,7 @@ function visualizeRender (component) {
     * @return void
     */
     component.prototype._updateRenderLogPosition = function(){
-        var parentNode = React.findDOMNode(this),
+        var parentNode = ReactDOM.findDOMNode(this),
           parentNodeRect = parentNode && parentNode.getBoundingClientRect();
 
         if (this.renderLogContainer && parentNodeRect) {
@@ -271,7 +272,7 @@ function visualizeRender (component) {
      * @return void
      */
     component.prototype._highlightChange = function(change) {
-        var parentNode = React.findDOMNode(this),
+        var parentNode = ReactDOM.findDOMNode(this),
             ANIMATION_DURATION = 500;
 
         if (parentNode) {

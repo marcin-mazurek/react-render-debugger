@@ -8,9 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcin-mazurek/react-render-visualizer-decorator.git"
+    "url": "git+https://github.com/marcin-mazurek/react-render-visualizer-decorator.git"
   },
-  "author": "Marcin Mazurek <marcin@mazurek.pro>",
+  "author": {
+    "name": "Marcin Mazurek",
+    "email": "marcin@mazurek.pro"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/marcin-mazurek/react-render-visualizer-decorator/issues"
@@ -30,7 +33,14 @@
     "decorator",
     "es7"
   ],
-  "dependencies": {
-    "react": "^0.13.3"
-  }
+  "peerDependencies": {
+    "react": ">=0.14.0",
+    "react-dom": ">=0.14.0"
+  },
+  "readme": "React Render Visualizer Decorator\r\n============\r\nA visual way to see what is (re)rendering and why.\r\n\r\nES7 decorator version ported from <https://github.com/redsunsoft/react-render-visualizer>\r\n\r\nFeatures\r\n--------\r\n- Shows when component is being mounted or updated by highlighting (red for mount, yellow for update)\r\n- Shows render count for each component instance\r\n- Shows individual render log for each component instance\r\n\r\nInstallation\r\n------------\r\n\r\n```sh\r\nnpm install react-render-visualizer-decorator\r\n```\r\n\r\nUsage\r\n-----\r\nImport and apply to any React component you want to start monitoring:\r\n\r\n```js\r\nimport React, { Component } from 'react';\r\nimport visualizeRender from 'react-render-visualizer-decorator';\r\n\r\n@visualizeRender\r\nclass TodoItem extends Component {\r\n    render () {\r\n        // ...\r\n    }\r\n}\r\n```\r\nComponent will show up with a blue border box when being monitored.\r\n\r\n\r\nDemo\r\n----\r\n![demo](https://cloud.githubusercontent.com/assets/3999910/6566152/ba047a42-c673-11e4-9833-1e78de51abc1.gif)",
+  "readmeFilename": "README.md",
+  "gitHead": "5e000dc1b070a79295c0b38fdda0fda5992643a4",
+  "_id": "react-render-visualizer-decorator@0.2.1",
+  "_shasum": "f5d3647cb3cc04a93affc4a63f9612526bde9d2a",
+  "_from": "react-render-visualizer-decorator@*"
 }
