@@ -37,4 +37,4 @@ Component will show up with a blue border box when being monitored.
 
 Demo
 ----
-![demo](https://cloud.githubusercontent.com/assets/3999910/6566152/ba047a42-c673-11e4-9833-1e78de51abc1.gif)
+See a demo page: <http://react-render-visualizer-decorator.netlify.com/>
