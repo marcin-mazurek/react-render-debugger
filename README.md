@@ -38,3 +38,8 @@ Component will show up with a blue border box when being monitored.
 Demo
 ----
 See a demo page: <http://react-render-visualizer-decorator.netlify.com/>
+
+Similar libraries
+-----------------
+
+* [mobx-react-devtools](https://github.com/mobxjs/mobx-react-devtools)
