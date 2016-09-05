@@ -4,6 +4,10 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
 function visualizeRender (component) {
+    var originalComponentDidMount = component.prototype.componentDidMount;
+    var originalComponentDidUpdate = component.prototype.componentDidUpdate;
+    var originalComponentWillUnmount = component.prototype.componentWillUnmount;
+
     component.prototype.UPDATE_RENDER_LOG_POSITION_TIMEOUT_MS = 500;
     component.prototype.MAX_LOG_LENGTH = 20;
     component.prototype.STATE_CHANGES = {
@@ -62,6 +66,10 @@ function visualizeRender (component) {
         this._updateRenderLogPositionTimeout = setInterval(
             this._updateRenderLogPosition.bind(this), this.UPDATE_RENDER_LOG_POSITION_TIMEOUT_MS
         );
+
+        if (typeof originalComponentDidMount === 'function') {
+            originalComponentDidMount.call(this);
+        }
     };
 
     component.prototype.componentDidUpdate = function(prevProps, prevState){
@@ -73,6 +81,10 @@ function visualizeRender (component) {
 
         // Highlight the update
         this._highlightChange(this.STATE_CHANGES.UPDATE);
+
+        if (typeof originalComponentDidUpdate === 'function') {
+            originalComponentDidUpdate.call(this, arguments);
+        }
     };
 
     component.prototype.componentWillUnmount = function (){
@@ -81,6 +93,10 @@ function visualizeRender (component) {
 
         // Clear the update position timeout
         clearInterval(this._updateRenderLogPositionTimeout);
+
+        if (typeof originalComponentWillUnmount === 'function') {
+            originalComponentWillUnmount.call(this);
+        }
     };
 
     /*
