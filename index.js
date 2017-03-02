@@ -316,6 +316,8 @@ function visualizeRender (component) {
     component.renderLogDetail = null;
     component.renderLogRenderCount = null;
     component._updateRenderLogPositionTimeout = null;
+    
+    return component;
 }
 
 module.exports = visualizeRender;
