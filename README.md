@@ -2,7 +2,7 @@ React Render Visualizer Decorator
 ============
 A visual way to see what is (re)rendering and why.
 
-ES7 decorator version ported from <https://github.com/redsunsoft/react-render-visualizer>
+Decorator (experimental ES201x syntax) version ported from <https://github.com/redsunsoft/react-render-visualizer>
 
 Features
 --------
@@ -25,8 +25,7 @@ Import and apply to any React component you want to start monitoring:
 import React, { Component } from 'react';
 import visualizeRender from 'react-render-visualizer-decorator';
 
-// Use with decorator syntax (legacy)
-// Learn more: https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy#why-legacy
+// Use with decorator syntax (experimental - learn more: https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy#why-legacy)
 @visualizeRender
 export default class TodoItem extends Component {
     render () {
