@@ -4,6 +4,8 @@ A visual way to see what is (re)rendering and why.
 
 Decorator (experimental ES201x syntax) version ported from <https://github.com/redsunsoft/react-render-visualizer>
 
+[Learn more about the experimental decorator syntax](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy#why-legacy).
+
 Features
 --------
 - Shows when component is being mounted or updated by highlighting (red for mount, yellow for update)
@@ -25,7 +27,7 @@ Import and apply to any React component you want to start monitoring:
 import React, { Component } from 'react';
 import visualizeRender from 'react-render-visualizer-decorator';
 
-// Use with decorator syntax (experimental - learn more: https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy#why-legacy)
+// Use with the decorator syntax (experimental)
 @visualizeRender
 export default class TodoItem extends Component {
     render () {
