@@ -25,12 +25,23 @@ Import and apply to any React component you want to start monitoring:
 import React, { Component } from 'react';
 import visualizeRender from 'react-render-visualizer-decorator';
 
+// Use with decorator syntax (legacy)
+// Learn more: https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy#why-legacy
 @visualizeRender
+export default class TodoItem extends Component {
+    render () {
+        // ...
+    }
+}
+
+// Or simply passing the component to the function
 class TodoItem extends Component {
     render () {
         // ...
     }
 }
+
+export default visualizeRender(TodoItem);
 ```
 Component will show up with a blue border box when being monitored.
 
