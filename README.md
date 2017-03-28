@@ -29,20 +29,20 @@ import debugRender from 'react-render-debugger';
 
 // Use with the decorator syntax (experimental)
 @debugRender
-export default class TodoItem extends Component {
+class DecoratedComponent extends Component {
     render () {
         // ...
     }
 }
 
 // Or simply passing the component to the function
-class TodoItem extends Component {
+class PlainComponent extends Component {
     render () {
         // ...
     }
 }
 
-export default debugRender(TodoItem);
+const WrappedPlainComponent = debugRender(PlainCompoent);
 ```
 Component will show up with a blue border box when being monitored.
 
