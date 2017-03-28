@@ -25,10 +25,10 @@ Import and apply to any React component you want to start monitoring:
 
 ```js
 import React, { Component } from 'react';
-import visualizeRender from 'react-render-visualizer-decorator';
+import debugRender from 'react-render-debugger';
 
 // Use with the decorator syntax (experimental)
-@visualizeRender
+@debugRender
 export default class TodoItem extends Component {
     render () {
         // ...
@@ -42,7 +42,7 @@ class TodoItem extends Component {
     }
 }
 
-export default visualizeRender(TodoItem);
+export default debugRender(TodoItem);
 ```
 Component will show up with a blue border box when being monitored.
 
