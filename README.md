@@ -1,8 +1,8 @@
-React Render Visualizer Decorator
+React Render Debugger
 ============
 A visual way to see what is (re)rendering and why.
 
-Decorator (experimental ES201x syntax) version ported from <https://github.com/redsunsoft/react-render-visualizer>
+Decorator/higher-order function version ported from <https://github.com/redsunsoft/react-render-visualizer>
 
 [Learn more about the experimental decorator syntax](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy#why-legacy).
 
@@ -16,7 +16,7 @@ Installation
 ------------
 
 ```sh
-npm install react-render-visualizer-decorator
+npm install react-render-debugger
 ```
 
 Usage
