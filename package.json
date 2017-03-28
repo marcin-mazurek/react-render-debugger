@@ -1,10 +1,9 @@
 {
   "name": "react-render-debugger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Render debugger for React",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marcin-mazurek/react-render-debugger.git"
